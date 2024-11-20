@@ -39,7 +39,7 @@ function atualizaMediaFinal(){
   
     const mediaNotas = calculaMedia()
 
-    document.getElementById('media-final-valor').innerHTML = mediaNotas
+    document.getElementById('media-final-valor').innerHTML = mediaNotas.toFixed(2)
     if (mediaNotas >= notaMinima){  }
     document.getElementById('media-final-resultado').innerHTML = mediaNotas >= notaMinima ? spanAprovado : spanReprovado
 
